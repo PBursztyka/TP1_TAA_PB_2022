@@ -1,28 +1,40 @@
 package business;
+import java.io.Serializable;
 import java.util.Date;
-import java.util.ArrayList;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
 @Entity
-public class RDV {
+public class RDV implements Serializable{
 
-	int id;
-	String intitule;
-	Date daterdv;
-	list<Professeur>professeurs;
-	list<Etudiant>etudiants;
-
+	private long id;
+	private String intitule;
+	private Date daterdv;
+	private Professeur professeur;
+	private Etudiant etudiant;
+	
+	
+		
+	public RDV(Date daterdv, Professeur professeur, Etudiant etudiant) {
+		super();
+		this.daterdv = daterdv;
+		this.professeur = professeur;
+		this.etudiant = etudiant;
+	}
+	
+	public RDV (){
+		
+	}
 	
 	@Id
 	@GeneratedValue
 	
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
 	
@@ -39,27 +51,20 @@ public class RDV {
 	public void setDaterdv(Date daterdv) {
 		this.daterdv = daterdv;
 	}
-	
 	@ManyToOne
-	public list<Professeur> getProfesseurs() {
-		return professeurs;
+	public Professeur getProfesseur() {
+		return professeur;
 	}
-	public void setProfesseurs(list<Professeur> professeurs) {
-		this.professeurs = professeurs;
+	public void setProfesseur(Professeur professeur) {
+		this.professeur = professeur;
 	}
-	
 	@ManyToOne
-	public list<Etudiant> getEtudiants() {
-		return etudiants;
+	public Etudiant getEtudiant() {
+		return etudiant;
 	}
-	public void setEtudiants(list<Etudiant> etudiants) {
-		this.etudiants = etudiants;
+	public void setEtudiant(Etudiant etudiant) {
+		this.etudiant = etudiant;
 	}
-
-
-
-
-	
 	
  
 

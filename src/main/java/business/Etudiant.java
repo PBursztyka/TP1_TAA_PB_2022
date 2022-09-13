@@ -1,37 +1,38 @@
 package business;
 
+import java.io.Serializable;
+import java.util.List;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+
+import javax.persistence.OneToMany;
+
 
 @Entity
-public class Etudiant extends Compte {
+public class Etudiant extends Compte implements Serializable {
 	
-	Etudiant ()
+	List<RDV> rendezV;
+	
+
+	Etudiant (String login, String pwd)
 	{
-		super();
+		super(login, pwd);
+	}
+	
+	public Etudiant () {
+		
+	}
+	
+	@OneToMany(mappedBy = "etudiant")
+	public List<RDV> getRendezV() {
+		return rendezV;
+	}
+
+	public void setRendezV(List<RDV> rendezV) {
+		this.rendezV = rendezV;
 	}
 
 
-	String Mail;
-	String name;
-	
-	
-	@Id
-	public String getMail() {
-		return Mail;
-	}
-	public void setMail(String mail) {
-		Mail = mail;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	
+
 
 }

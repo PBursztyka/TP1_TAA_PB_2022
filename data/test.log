@@ -1,2 +1,222 @@
-/*C3*/SET SCHEMA PUBLIC
+/*C6*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C7*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C9*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C10*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C11*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C12*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+DISCONNECT
+/*C11*/DISCONNECT
+/*C13*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C15*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C14*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C16*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C15*/DISCONNECT
+/*C13*/DISCONNECT
+/*C16*/DISCONNECT
+/*C17*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C18*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C17*/DISCONNECT
+/*C14*/DISCONNECT
+/*C18*/DISCONNECT
+/*C19*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C20*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C21*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C20*/DISCONNECT
+/*C19*/DISCONNECT
+/*C21*/DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+DISCONNECT
+/*C22*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C23*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C24*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
+/*C23*/DISCONNECT
+/*C22*/DISCONNECT
+/*C24*/DISCONNECT
+/*C25*/SET SCHEMA PUBLIC
+drop table if exists Compte CASCADE 
+drop table if exists Etudiant CASCADE 
+drop table if exists Professeur CASCADE 
+drop table if exists RDV CASCADE 
+drop sequence hibernate_sequence if exists
+create sequence hibernate_sequence start with 1 increment by 1
+create table Compte (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Etudiant (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table Professeur (login varchar(255) not null, pwd varchar(255), primary key (login))
+create table RDV (id bigint not null, daterdv timestamp, intitule varchar(255), etudiant_login varchar(255), professeur_login varchar(255), primary key (id))
+alter table RDV add constraint FK5tykgqeijwxwavw0bb7sw2xr3 foreign key (etudiant_login) references Etudiant
+alter table RDV add constraint FKq5evjjotbg9opaocf2hwryfa8 foreign key (professeur_login) references Professeur
 DISCONNECT
