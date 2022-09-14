@@ -8,8 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name="userinfo",
-urlPatterns={"/UserInfo"})
+@WebServlet(name="userinfotest",
+urlPatterns={"/UserInfoTest"})
 public class UserInfo extends HttpServlet {
 public void doPost(HttpServletRequest request,
                     HttpServletResponse response)
