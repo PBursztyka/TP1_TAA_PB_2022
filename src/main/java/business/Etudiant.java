@@ -34,5 +34,4 @@ public class Etudiant extends Compte implements Serializable {
 
 
 
-
 }
